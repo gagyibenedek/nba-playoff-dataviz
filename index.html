@@ -1,0 +1,17 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //https://rapidapi.com/theapiguy/api/free-nba
+            fetch("https://free-nba.p.rapidapi.com/players?page=0&per_page=25&search=curry", {
+                method: "GET",
+                headers:{
+                "X-RapidAPI-Host": "free-nba.p.rapidapi.com",
+                'Content-Type': 'application/json',
+                "X-RapidAPI-Key": "2fe96c25efmsh92daee5fc1b4d6dp18d7fcjsnadbc6ab24fd4"
+                }
+            }).then(response => response.json()).then(data => console.log(data));
+        </script>
+    </body>
+
+</html>
